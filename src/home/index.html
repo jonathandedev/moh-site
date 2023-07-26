@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Tab Stylings -->
+  <title>Messages of Hope</title>
+  <link rel="icon" href="../shared/assets/favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/f2c4f731a9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="main-header">
+  <div id="main-header__inner-container">
+
+    <!-- Logo -->
+    <a id="main-header__logo" href="#home">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div id="main-header__nav">
+      <div id="main-nav">
+        <nav id="main-nav__inner">
+          <a class="main-nav__item" href="#home">Home</a>
+          <a class="main-nav__item" href="#what-we-do">What We Do</a>
+          <div class="main-nav__item main-nav__item--about">About
+            <nav id="main-nav--about">
+              <a class="main-nav__about-item" href="#about">The Creator</a>
+              <a class="main-nav__about-item" href="#">MOH</a>
+              <a class="main-nav__about-item" href="#">Thrive LDN</a>
+            </nav>
+          </div>
+          <a class="main-nav__item" href="#latest-news">News</a>
+        </nav>
+        <div id="main-nav__dot"></div>
+      </div>
+      <a id="main-nav__cta" href="#">
+        Write a Message
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div id="main-header__hamburger-container">
+      <button id="main-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="main-header__mobile-nav">
+      <nav class="mobile-nav">
+        <a class="mobile-nav__item mobile-nav__item--close" href="#home">Home</a>
+        <a class="mobile-nav__item mobile-nav__item--close" href="#what-we-do">What We Do</a>
+        <a id="mobile-nav__item--about" class="mobile-nav__item">About</a>
+        <a class="mobile-nav__item mobile-nav__item--close" href="#latest-news">News</a>
+        <a class="mobile-nav__item mobile-nav__item--close mobile-nav__cta" href="#">
+          Write a Message
+        </a>
+      </nav>
+
+      <div id="main-header__nav-modal"></div>
+
+      <div id="main-header__mobile-nav--about">
+        <p class="mobile-nav__about-text">About</p>
+        <nav class="mobile-nav--about">
+          <a class="mobile-nav__about-item" href="#about">The Creator</a>
+          <a class="mobile-nav__about-item" href="#">MOH</a>
+          <a class="mobile-nav__about-item" href="#">Thrive LDN</a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- Main -->
+<main>
+  
+<!-- Home -->
+<section id="home">
+  <div class="inner-container home__inner-container">
+
+    <article class="home__hero">
+      <picture class="home__image-container">
+        <source 
+          type="image/webp" 
+          srcset="assets/home__hero.webp" />
+        <img 
+          role="presentation"
+          src="assets/home__hero.jpg"
+          decoding="async"
+          fetchpriority="high"
+          alt="Group of young adults each writing a message of hope." />
+      </picture>
+      <div class="home__logo-container">
+        <img 
+          role="presentation"
+          src="../shared/assets/logo.png"
+          decoding="async"
+          fetchpriority="high" 
+          alt="Messages of Hope Logo." />
+      </div>
+    </article>
+
+    <h4 class="home__description">Messages of Hope is a campaign that 
+      encourages anyone and everyone to write anonymous messages for 
+      people that are going through a difficult time, and/or struggling 
+      with their <span>mental health.</span>
+    </h4>
+
+    <a class="home__button write-a-message-button" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <p class="write-a-message-button__text">Write a Message</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- What We Do -->
+<section id="what-we-do">
+  <div class="inner-container what-we-do__inner-container">
+
+    <h1 class="section-title">What we do</h1>
+
+    <div class="content-container what-we-do__content-container">
+
+      <a class="what-we-do__item" id="what-we-do__projects" href="#">
+        <picture>
+          <source 
+            type="image/webp" 
+            srcset="assets/what-we-do__projects.webp" />
+          <img 
+            role="presentation"
+            src="assets/what-we-do__projects.jpg"
+            decoding="async"
+            fetchpriority="auto"/>
+        </picture>
+        <div class="what-we-do__white-effect"></div>
+        <h3>Projects</h3>
+        <p>Messages of Hope runs several projects throughout the year. 
+          Click here to learn more about our projects and what we do.
+        </p>
+      </a>
+
+      <a class="what-we-do__item" id="what-we-do__murals" href="#">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/what-we-do__murals.webp" />
+          <img
+            role="presentation"
+            src="assets/what-we-do__murals.jpg"
+            decoding="async"
+            fetchpriority="auto" />
+        </picture>
+        <div class="what-we-do__white-effect"></div>
+        <h3>Murals</h3>
+        <p>Messages of Hope wants to spread hope and make communities 
+          vibrant and colourful. Click here to see how we're doing this.
+        </p>
+      </a>
+
+      <a class="what-we-do__item" id="what-we-do__colouring" href="#">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/what-we-do__colouring.webp" />
+          <img
+            role="presentation"
+            src="assets/what-we-do__colouring.jpg"
+            decoding="async"
+            fetchpriority="auto" />
+        </picture>
+        <div class="what-we-do__white-effect"></div>
+        <h3>Free Colouring Pages</h3>
+        <p>Messages of Hope runs several projects throughout the year. 
+          Click here to learn more about our projects and what we do.
+        </p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="inner-container about__inner-container">
+
+    <h1 class="section-title about__section-title">
+      About the creator of messages of hope
+    </h1>
+    <div class="content-container about__content-container">
+
+      <article class="about__section">
+        <picture class="about__image-container">
+          <source 
+            type="image/webp" 
+            srcset="assets/about__bethan-evans.webp" />
+          <img 
+            width="100"
+            height="100"
+            loading="lazy"
+            role="presentation"
+            src="assets/about__bethan-evans.jpg"
+            decoding="async"
+            fetchpriority="high" />
+        </picture>
+        <div class="about__text-container">
+          <p class="about__margin-bottom">
+            My name is Bethan Evans and I'm the proud creator of Messages of 
+            Hope. All the way back in 2020, Messages of Hope was just a seedling 
+            of an idea that was planted when I started on my own personal journey 
+            in search of hope.
+          </p>
+          <picture class="about__quote-container mobile-element">
+            <source
+              type="image/webp"
+              srcset="assets/about__quote.webp" />
+            <img 
+              loading="lazy"
+              width="100"
+              height="100"
+              role="presentation"
+              src="assets/about__quote.jpg"
+              decoding="async"
+              fetchpriority="low" />
+          </picture>
+          <p class="about__margin-top">
+            As I'm sure many people can relate too, 2020 was the beginning of a 
+            very difficult and challenging time for myself. Alongside having to 
+            cope with the news of a potential global pandemic on the horizon, and 
+            trying to complete my second year at university, I was also just starting 
+            to emotionally unpack a series of unfortunate and traumatic events from 
+            my past. The more I unpacked, the more difficult things became and the 
+            more I began to struggle with my mental health.
+          </p>
+        </div>
+      </article>
+
+      <article class="about__section">
+        <div class="about__text-container">
+          <p>Very quickly I completely lost sight of who I was, my goals and what 
+            I had to live for. I didn't know it at that time, but I was at the 
+            beginning of a long battle against Borderline Personality Disorder, 
+            (also referred to as, Emotionally Unstable Personality Disorder). This 
+            mental illness seeped its way into every aspect of my life until I 
+            began to believe that the only escape from torment was suicide.
+          </p>
+          <p>The road to a more stable life certainly wasn't straight and I continue 
+            to find bumps almost every day. And although I have created a campaign 
+            thats core aim is to spread hope to others, I inadvertently found hope 
+            in the campaign myself.
+          </p>
+          <a href="#">Why was Messages of Hope created?</a>
+        </div>
+        <picture class="about__image-container desktop-element">
+          <source 
+            type="image/webp"
+            srcset="assets/about__bethan-evans-2.webp" />
+          <img 
+            loading="lazy"
+            width="100"
+            height="100"
+            role="presentation"
+            src="assets/about__bethan-evans-2.jpg"
+            decoding="async"
+            fetchpriority="auto" />
+        </picture>
+      </article>
+    
+      <a class="about__button write-a-message-button" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <p class="write-a-message-button__text">Write a Message</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="white-padding"></div>
+
+<!-- Latest News -->
+<section id="latest-news">
+  <div class="inner-container latest-news__inner-container">
+
+    <h1 class="section-title latest-news__section-title">Latest news</h1>
+
+    <div class="content-container latest-news__content-container">
+
+      <button class="latest-news__item" id="latest-news__art-project">
+        <picture class="latest-news__image">
+          <source
+            type="image/webp"
+            srcset="assets/latest-news__art-project.webp" />
+          <img
+            height="100"
+            width="100"
+            loading="lazy"
+            role="presentation"
+            src="assets/latest-news__art-project.jpg"
+            decoding="async"
+            fetchpriority="auto" />
+        </picture>
+        <div class="latest-news__text-container">
+          <h4>Collaborative Art Project</h4>
+          <p>Barry Island <br />
+            29th July 2023, 1PM
+          </p>
+        </div>
+      </button>
+
+      <button class="latest-news__item" id="latest-news__dance-fundraiser">
+        <picture class="latest-news__image">
+          <source
+            type="image/webp"
+            srcset="assets/latest-news__dance-fundraiser.webp" />
+          <img
+            height="100"
+            width="100"
+            loading="lazy"
+            role="presentation"
+            src="assets/latest-news__dance-fundraiser.jpg"
+            decoding="async"
+            fetchpriority="auto" />
+        </picture>
+        <div class="latest-news__text-container">
+          <h4>Dance Intensive Fundraiser</h4>
+          <p>St Cyres, Penarth <br />
+            27th August 2023, 11AM-4PM</p>
+        </div>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Latest News Popups -->
+<div id="modal"></div>
+<article id="moh-2023-popup" class="popup">
+  <div class="popup__inner-container">
+
+    <button class="popup__close-button" id="moh-2023-popup__close-button">
+      <span></span>
+      <span></span>
+    </button>
+
+    <h1>Messages of Hope 2023</h1>
+    <div class="popup__content-container">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/latest-news__art-project.webp" />
+        <img
+          height="100"
+          width="100"
+          loading="lazy"
+          role="presentation"
+          src="assets/latest-news__art-project.jpg"
+          decoding="async"
+          fetchpriority="auto" />
+      </picture>
+      <p>
+        Messages of Hope 2023 will be hosting a collaborative art project at Barry
+        Island on the 29th July from 1PM. You will find us under the white pointed
+        canopy, near the beach huts.
+      </p>
+      <p>
+        Come along and add your message of hope to a series of canvases! Be a part
+        of a movement that is working to inspire and spark hope in the community.
+      </p>
+      <p>
+        There will be chalk, paint, pens and good vibes.
+      </p>
+    </div>
+  </div>
+</article>
+<article id="dance-fundraiser-popup" class="popup">
+  <div class="popup__inner-container">
+
+    <button class="popup__close-button" id="dance-fundraiser-popup__close-button">
+      <span></span>
+      <span></span>
+    </button>
+
+    <h1>Dance Intensive Fundraiser</h1>
+    <div class="popup__content-container">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/latest-news__dance-fundraiser.webp" />
+        <img
+          height="100"
+          width="100"
+          loading="lazy"
+          role="presentation"
+          src="assets/latest-news__dance-fundraiser.jpg"
+          decoding="async"
+          fetchpriority="auto" />
+      </picture>
+      <p>
+        Join us for a fun and challenging day of dance at St Cyres, Penarth on
+        Saturday 27th August from 11AM-4PM.
+      </p>
+      <p>
+        The day will consist of the following classes; musical theatre jazz, 
+        lyrical jazz and commercial. If you're ages 10+ and love to dance, don't
+        be shy, come along and have some fun!
+      </p>
+      <p>
+        It's a no pressure environment and my aim is for you to leave feeling
+        confident.
+      </p>
+      <p>
+        <a class="dance-fundraiser-popup__reservation" href="https://www.eventbrite.co.uk/e/summer-dance-intensive-for-messages-of-hope-tickets-665222356977?aff=ebdssbdestsearch">Click here</a> 
+        to reserve your spot! Book now to avoid disappointment!
+      </p>
+      <p>
+        If you have any queries or questions, don't be afraid to get in contact
+        by dropping us a message on 
+        <a class="dance-fundraiser-popup__instagram" href="https://www.instagram.com/messagesof.hope/">Instagram</a>.
+      </p>
+    </div>
+  </div>
+</article>
+
+</main>
+
+<!-- Footer -->
+<div class="footer-white-padding"></div>
+<footer id="main-footer">
+  <div id="main-footer__inner">
+
+    <div class="main-footer__contact">
+      <h2>Contact</h2>
+      <div class="main-footer__social-icons">
+        <a href="https://www.instagram.com/messagesof.hope/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Messages-of-Hope/100087952429971/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+      <button type="button" id="main-footer__email-button">Email Us</button>
+      <p>contact@messagesofhope.co.uk</p>
+    </div>
+
+    <div class="main-footer__images">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="../shared/shared.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
