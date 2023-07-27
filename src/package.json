@@ -1,0 +1,17 @@
+{
+  "name": "messages-of-hope",
+  "version": "1.0.0",
+  "description": "This is the server side application used to run the Messages of Hope website.",
+  "main": "moh-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jonathande",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}

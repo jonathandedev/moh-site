@@ -8,13 +8,12 @@ const fs = require("fs");
 require("dotenv").config();
 
 // constants
-const PORT = process.env.PORT || 3010;
+const port = process.env.PORT || 3010;
 const app = express();
 
 // middleware
 app.use(cors());
 app.use(express.json());
-app.use(cookieParser());
 app.use(compression());
 
 app.listen(port, "localhost", () => {
