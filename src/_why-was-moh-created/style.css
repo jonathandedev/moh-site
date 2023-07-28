@@ -1,0 +1,173 @@
+
+main {
+  background: var(--main-white);
+}
+
+#why-was-messages-of-hope-created {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.title-card {
+  background: var(--main-yellow);
+  display: block;
+}
+
+.why-was-messages-of-hope-created__section-title {
+  font-family: 'Concert One', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  /* margin-top: 0; */
+  max-width: 37rem;
+  color: var(--main-white);
+  position: relative;
+  margin: auto;
+  /* margin-bottom: 1rem;
+  margin-left: 3%;
+  margin-right: 3%; */
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 105%;
+}
+
+.why-was-messages-of-hope-created__text {
+  text-align: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 2rem;
+  font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  color: black;
+  line-height: 130%;
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+}
+
+.why-was-messages-of-hope-created__post-container {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.why-was-messages-of-hope-created__image-container {
+  width: 100%;
+  background: #e8efff;
+}
+
+.why-was-messages-of-hope-created__post-container img {
+  width: 60%;
+  margin: auto;
+}
+
+.why-was-messages-of-hope-created__post-container p {
+  font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.why-was-messages-of-hope-created__image-container-main {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.why-was-messages-of-hope-created__image-container-main img {
+  width: 100%;
+}
+
+.why-was-messages-of-hope-created__button {
+  margin-top: 3rem;
+}
+
+.bottom-post {
+  background: #fd5f42;
+}
+
+.main-footer {
+  height: 15rem;
+}
+
+.main-footer__inner {
+  height: 70%;
+}
+
+.desktop-element {
+  display: none;
+}
+
+.mobile-element {
+  display: block;
+}
+
+@media (min-width: 64rem) {
+
+  #why-was-messages-of-hope-created {
+    padding-top: 3vh;
+  }
+
+  .why-was-messages-of-hope-created__content {
+    max-width: 60rem;
+    min-height: 80rem;
+    margin: auto;
+    position: relative;
+  }
+
+  .why-was-messages-of-hope-created__inner-container {
+    margin-left: 0;
+    max-width: 60%;
+  }
+
+  .why-was-messages-of-hope-created__section-title {
+    max-width: 63rem;
+    font-size: 3rem;
+    padding-right: 15rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .why-was-messages-of-hope-created__post-container {
+    position: absolute;
+    width: 40%;
+    aspect-ratio: 1/1;
+    right: 0;
+    top: 0;
+  }
+
+  .why-was-messages-of-hope-created__post-container img {
+    width: 100%;
+  }
+
+  .why-was-messages-of-hope-created__image-container-main {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    right: 0;
+    top: 27rem;
+  }
+
+  .why-was-messages-of-hope-created__image-container-main img {
+    width: 100%;
+  }
+
+  .bottom-post-container {
+    aspect-ratio: 1/1;
+    top: initial;
+    top: 52rem;
+    right: 0;
+  }
+
+  .mobile-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: block;
+  }
+}

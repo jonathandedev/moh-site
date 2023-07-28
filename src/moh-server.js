@@ -21,19 +21,20 @@ app.listen(port, "localhost", () => {
 });
 
 // shared files
-app.get("/shared/shared.css", (req, res) => {
-  res.sendFile(__dirname + "/shared/shared.css");
+app.get("/_shared/shared.css", (req, res) => {
+  res.sendFile(__dirname + "/_shared/shared.css");
 });
-app.get("/shared/shared.js", (req, res) => {
-  res.sendFile(__dirname + "/shared/shared.js");
+app.get("/_shared/shared.js", (req, res) => {
+  res.sendFile(__dirname + "/_shared/shared.js");
 });
-app.get("/shared/assets/favicon.ico", (req, res) => {
-  res.sendFile(__dirname + "/shared/assets/favicon.ico");
+app.get("/_shared/assets/favicon.ico", (req, res) => {
+  res.sendFile(__dirname + "/_shared/assets/favicon.ico");
 });
-app.get("/shared/assets/logo.png", (req, res) => {
-  res.sendFile(__dirname + "/shared/assets/logo.png");
+app.get("/_shared/assets/logo.png", (req, res) => {
+  res.sendFile(__dirname + "/_shared/assets/logo.png");
 });
 
 // routes
-app.use("/", express.static(__dirname + "/home"));
+app.use("/", express.static(__dirname + "/_home"));
+app.use("/whywasmessagesofhopecreated", express.static(__dirname + "/_why-was-moh-created"));
 
