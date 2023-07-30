@@ -45,6 +45,11 @@ app.get("/_shared/assets/mobile-nav-image.webp", (req, res) => {
 app.get("/_shared/assets/mobile-nav-image.jpg", (req, res) => {
   res.sendFile(__dirname + "/_shared/assets/mobile-nav-image.jpg");
 });
+
+// fonts
+app.get("/_shared/fonts/fonts.css", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/fonts.css");
+});
 app.get("/_shared/fonts/nunito/Nunito-Light.ttf", (req, res) => {
   res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Light.ttf");
 });
@@ -53,5 +58,8 @@ app.get("/_shared/fonts/nunito/Nunito-Regular.ttf", (req, res) => {
 });
 app.get("/_shared/fonts/nunito/Nunito-Bold.ttf", (req, res) => {
   res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Bold.ttf");
+});
+app.get("/_shared/fonts/nunito/Nunito-ExtraBold.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-ExtraBold.ttf");
 });
 
