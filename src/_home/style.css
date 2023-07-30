@@ -5,7 +5,7 @@
   padding: env(safe-area-inset);
   overflow: hidden;
   width: 100vw;
-  min-width: 280px;;
+  min-width: 280px;
   padding-top: 7vh;
 }
 
@@ -115,7 +115,7 @@
     width: 45%;
     padding: 0;
     margin: 4rem 0 0 2rem;
-    
+
     font-size: 110%;
   }
 
@@ -130,15 +130,50 @@
 /* What We Do */
 
 #what-we-do {
-  text-align: center;
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
   padding-top: 2rem;
 }
 
 .what-we-do__inner-container {
+  min-width: 280px;
+  width: 100%;
+  max-width: 32.25rem;
+  height: 100%;
+  margin: auto;
   padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;  
 }
 
-.what-we-do__item {
+.what-we-do__section-title {
+  max-width: 50rem;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0;
+
+  color: var(--text-blue);
+  text-transform: uppercase;
+  font-family: concert-one, sans-serif;
+  font-size: 2.5rem;
+}
+
+.what-we-do__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#what-we-do a {
   display: block;
   width: 90%;
   max-width: 26rem;
@@ -150,13 +185,14 @@
 
   box-shadow: 0 0 6px 2px #a0a0a07f;
   text-decoration: none;
+  background: var(--main-yellow);
 }
 
-.what-we-do__item:hover {
+#what-we-do a:hover {
   cursor: pointer;
 }
 
-.what-we-do__item img {
+#what-we-do a img {
   position: absolute;
   top: 0;
   left: 0;
@@ -188,22 +224,20 @@
   -moz-transform-origin: center top 0;
 }
 
-.what-we-do__item h3 {
+#what-we-do a h3 {
   display: block;
   position: relative;
-  margin: 1.5rem 0 1rem 2rem;
+  margin: 1.5rem 0 0.7rem 2rem;
   z-index: 2;
 
-  font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: clamp(1.1rem, 2.3vw, 1.5rem);
-  color: black;
-  line-height: 130%;
-  letter-spacing: 1px;
+  font-family: nunito, sans-serif;
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  color: var(--main-black);
   text-align: left;
   text-decoration: none;
 }
 
-.what-we-do__item p {
+#what-we-do a p {
   margin: 1rem 2rem;
   padding-right: 5%;
   position: relative;
@@ -212,60 +246,67 @@
   z-index: 2;
 
   text-align: left;
-  font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: pt-sans, sans-serif;
   font-size: clamp(0.9rem, 1.8vw, 1rem);
-  color: black;
+  color: var(--main-black);
   opacity: 1;
-  line-height: 130%;
-  letter-spacing: 1px;
-}
-
-#what-we-do__projects {
-  background: var(--main-yellow);
-}
-
-#what-we-do__murals {
-  background: var(--main-yellow)
-}
-
-#what-we-do__colouring {
-  background: var(--main-yellow);  
 }
 
 @media (min-width: 64rem) {
+
+  #what-we-do {
+    margin-top: 4rem;
+  }
+
+  .what-we-do__inner-container {
+    max-width: 90rem;
+    width: 85%;
+  }
+
+  .what-we-do__section-title {
+    margin-bottom: 4rem;
+    max-width: none;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .what-we-do__content-container {
+    flex-direction: row;
+  }
+
+  #what-we-do a {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30%;
+    min-width: 22rem;
+  }
+
+  .what-we-do__white-effect {
+    height: clamp(12rem, 68%, 17rem);
+  }
+
+  #what-we-do a h3 {
+    font-size: clamp(1.1rem, 2.3vw, 1.5rem);
+  }
+
+  #what-we-do a p {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+  }
+
   @media (hover: hover) {
-    .what-we-do__item {
-      margin-left: 1%;
-      margin-right: 1%;
-      width: 30%;
-      min-width: 22rem;
-    }
-  
     .what-we-do__white-effect {
-      display: block;
       height: 45%;
-      width: 150%;
-      position: absolute;
-      top: -20%;
-      left: -20%;
-  
-      background: #ffffffd8;
-  
-      transform: rotate(-10deg);
-      -webkit-transform: rotate(-10deg);
-      -o-transform: rotate(-10deg);
-      -moz-transform: rotate(-10deg);
-      transform-origin: center top 0;
-      -webkit-transform-origin: center top 0;
-      -o-transform-origin: center top 0;
-      -moz-transform-origin: center top 0;
+
       transition: all 0.4s ease 0.2s;
       -webkit-transition: all 0.4s ease 0.2s;
       -o-transition: all 0.4s ease 0.2s;
       -moz-transition: all 0.4s ease 0.2s;
     }
   
-    .what-we-do__item:hover .what-we-do__white-effect {
+    #what-we-do a:hover .what-we-do__white-effect {
       height: clamp(12rem, 68%, 17rem);
   
       transition: all 0.4s ease 0s;
@@ -274,36 +315,8 @@
       -moz-transition: all 0.4s ease 0s;
     }
   
-    .what-we-do__item h3 {
-      display: block;
-      position: relative;
-      margin: 1rem;
-      z-index: 2;
-  
-      text-align: left;
-      font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
-      font-size: clamp(1.1rem, 2.3vw, 1.5rem);
-      color: var(--main-black);
-      line-height: 130%;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
-  
-    .what-we-do__item p {
-      position: relative;
-      padding-right: 5%;
-      display: block;
-      /* width: %; */
-      z-index: 2;
-      margin: 1rem 2rem;
-  
-      text-align: left;
-      font-family: 'Mandali', Verdana, Geneva, Tahoma, sans-serif;
-      font-size: clamp(0.9rem, 1.8vw, 1rem);
-      color: var(--main-black);
+    #what-we-do a p {
       opacity: 0;
-      line-height: 130%;
-      letter-spacing: 1px;
   
       transition: all 0.2s ease 0s;
       -webkit-transition: all 0.2s ease 0s;
@@ -311,28 +324,13 @@
       -moz-transition: all 0.2s ease 0s;
     }
   
-    .what-we-do__item:hover p {
+    #what-we-do a:hover p {
       opacity: 1;
   
       transition: all 0.2s ease 0.4s;
       -webkit-transition: all 0.2s ease 0.4s;
       -o-transition: all 0.2s ease 0.4s;
       -moz-transition: all 0.2s ease 0.4s;
-    }
-
-    .section-title {
-      margin-bottom: 4rem;
-      max-width: none;
-      margin-left: 5%;
-      margin-right: 5%;
-  
-      font-size: 3rem;
-      text-align: center;
-    }
-  
-    .inner-container {
-      max-width: 90rem;
-      width: 85%;
     }
   }
 }
@@ -778,17 +776,3 @@
 }
 
 /* End Latest News Popups */
-
-
-.section-title {
-  max-width: 50rem;
-  position: relative;
-  margin-bottom: 2rem;
-  margin-left: 3%;
-  margin-right: 3%;
-
-  color: var(--text-blue);
-  text-transform: uppercase;
-  font-family: 'Concert One', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5rem;
-}
