@@ -50,3 +50,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "pt-sans";
+  src: url("pt-sans/PTSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}

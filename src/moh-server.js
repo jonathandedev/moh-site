@@ -68,3 +68,6 @@ app.get("/_shared/fonts/nunito/Nunito-ExtraBold.ttf", (req, res) => {
 app.get("/_shared/fonts/pt-sans/PTSans-Regular.ttf", (req, res) => {
   res.sendFile(__dirname + "/_shared/fonts/pt-sans/PTSans-Regular.ttf");
 });
+app.get("/_shared/fonts/pt-sans/PTSans-Bold.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/pt-sans/PTSans-Bold.ttf");
+});
