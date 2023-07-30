@@ -14,38 +14,36 @@ function headerSetup() {
 function mobileNavSetup() {
   const hamburger = document.getElementById("main-header__hamburger");
   const mobileNav = document.getElementById("main-header__mobile-nav");
-  const aboutNav = document.getElementById("main-header__mobile-nav--about");
-  const navModal = document.getElementById("main-header__nav-modal");
-  const mobileNavButtons = document.getElementsByClassName("mobile-nav__item--close");
-  const aboutNavButtons = document.getElementsByClassName("mobile-nav__about-item");
-  const aboutButton = document.getElementById("mobile-nav__item--about");
-
-  hamburger.addEventListener("click", toggleMobileNav);
+  const mobileAboutNav = document.getElementById("mobile-nav__about");
+  const mobileNavButtons = document.querySelectorAll(".mobile-nav a");
+  
+  hamburger.addEventListener("click", toggleNav);
   for (let i = 0; i < mobileNavButtons.length; i++) {
-    mobileNavButtons[i].addEventListener("click", toggleMobileNav);
+    mobileNavButtons[i].addEventListener("click", toggleNav);
   }
-  for (let i = 0; i < aboutNavButtons.length; i++) {
-    aboutNavButtons[i].addEventListener("click", toggleMobileNav);
-  }
-
-  navModal.addEventListener("click", function() {
-    aboutNav.classList.remove("open");
-    navModal.classList.remove("open");
-  });
-  aboutButton.addEventListener("click", function() {
-    aboutNav.classList.add("open");
-    navModal.classList.add("open");
-  });
 
   /**
-   * Used to toggle the mobile navigation screen.
+   * Used to close the mobile navigation.
    */
-  function toggleMobileNav() {
-    hamburger.classList.toggle("open");
+  function toggleNav() {
+    mobileAboutNav.classList.remove("open");
     mobileNav.classList.toggle("open");
-    aboutNav.classList.remove("open");
-    navModal.classList.remove("open");
+    hamburger.classList.toggle("open");
   }
+
+  const aboutButton = document.getElementById("mobile-nav__item--about");
+  const aboutButtonClone = aboutButton.cloneNode(true);
+  aboutButton.parentNode.replaceChild(aboutButtonClone, aboutButton);
+  aboutButtonClone.addEventListener("click", function() {
+    mobileAboutNav.classList.add("open");
+  });
+
+  const backButton = document.getElementById("mobile-nav__item--back");
+  const backButtonClone = backButton.cloneNode(true);
+  backButton.parentNode.replaceChild(backButtonClone, backButton);
+  backButtonClone.addEventListener("click", function() {
+    mobileAboutNav.classList.remove("open");
+  });
 }
 
 /**

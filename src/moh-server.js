@@ -20,6 +20,12 @@ app.listen(port, "localhost", () => {
   console.log("Server is running on port: " + port);
 });
 
+// routes
+app.use("/whywasmessagesofhopecreated", express.static(__dirname + "/_why-was-moh-created"));
+app.use("/thriveldnpartnership", express.static(__dirname + "/_thrive-ldn-partnership"));
+app.use("/", express.static(__dirname + "/_home"));
+// app.use("*", express.static(__dirname + "/_404"));
+
 // shared files
 app.get("/_shared/shared.css", (req, res) => {
   res.sendFile(__dirname + "/_shared/shared.css");
@@ -33,8 +39,19 @@ app.get("/_shared/assets/favicon.ico", (req, res) => {
 app.get("/_shared/assets/logo.png", (req, res) => {
   res.sendFile(__dirname + "/_shared/assets/logo.png");
 });
-
-// routes
-app.use("/", express.static(__dirname + "/_home"));
-app.use("/whywasmessagesofhopecreated", express.static(__dirname + "/_why-was-moh-created"));
+app.get("/_shared/assets/mobile-nav-image.webp", (req, res) => {
+  res.sendFile(__dirname + "/_shared/assets/mobile-nav-image.webp");
+});
+app.get("/_shared/assets/mobile-nav-image.jpg", (req, res) => {
+  res.sendFile(__dirname + "/_shared/assets/mobile-nav-image.jpg");
+});
+app.get("/_shared/fonts/nunito/Nunito-Light.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Light.ttf");
+});
+app.get("/_shared/fonts/nunito/Nunito-Regular.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Regular.ttf");
+});
+app.get("/_shared/fonts/nunito/Nunito-Bold.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Bold.ttf");
+});
 

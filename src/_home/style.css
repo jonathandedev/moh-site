@@ -1,13 +1,42 @@
 /* Home */
 
 #home {
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;;
   padding-top: 7vh;
 }
 
 .home__inner-container {
+  min-width: 280px;
+  width: 100%;
+  max-width: 32.25rem;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+
   margin-top: 5rem;
   padding-bottom: 7rem;
 }
+
+.section-title {
+  max-width: 50rem;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  color: var(--text-blue);
+  text-transform: uppercase;
+  font-family: 'Concert One', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+}
+
 
 .home__hero {
   min-width: 18rem;
@@ -101,6 +130,21 @@
   .home__button {
     position: relative;
     margin: 5rem 0 0 5rem;
+  }
+
+  .section-title {
+    margin-bottom: 4rem;
+    max-width: none;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .inner-container {
+    max-width: 90rem;
+    width: 85%;
   }
 
 }

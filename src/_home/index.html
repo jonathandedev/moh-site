@@ -25,78 +25,64 @@
 
 <!-- Header -->
 <header id="main-header">
-  <div id="main-header__inner-container">
 
-    <!-- Logo -->
-    <a id="main-header__logo" href="#home">
-      <img 
-        role="presentation"
-        decoding="async"
-        fetchpriority="high"
-        src="../_shared/assets/logo.png" 
-        alt="Messages of Hope Logo" />
-    </a>
+  <!-- Logo -->
+  <a id="main-header__logo" href="#home">
+    <img 
+      role="presentation"
+      decoding="async"
+      fetchpriority="high"
+      src="../_shared/assets/logo.png" 
+      alt="Messages of Hope Logo." />
+  </a>
 
-    <!-- Desktop Navigation -->
-    <div id="main-header__nav">
-      <div id="main-nav">
-        <nav id="main-nav__inner">
-          <a class="main-nav__item" href="#home">Home</a>
-          <a class="main-nav__item" href="#what-we-do">What We Do</a>
-          <div class="main-nav__item main-nav__item--about">About
-            <nav id="main-nav--about">
-              <a class="main-nav__about-item" href="#about">The Creator</a>
-              <a class="main-nav__about-item" href="/whywasmessagesofhopecreated">MOH</a>
-              <a class="main-nav__about-item" href="#">Thrive LDN</a>
-            </nav>
-          </div>
-          <a class="main-nav__item" href="#latest-news">News</a>
-        </nav>
-        <div id="main-nav__dot"></div>
-      </div>
-      <a id="main-nav__cta" href="#">
-        Write a Message
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div>
-
-    <!-- Mobile Hamburger -->
-    <div id="main-header__hamburger-container">
-      <button id="main-header__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <div id="main-header__mobile-nav">
-      <nav class="mobile-nav">
-        <a class="mobile-nav__item mobile-nav__item--close" href="#home">Home</a>
-        <a class="mobile-nav__item mobile-nav__item--close" href="#what-we-do">What We Do</a>
-        <a id="mobile-nav__item--about" class="mobile-nav__item">About</a>
-        <a class="mobile-nav__item mobile-nav__item--close" href="#latest-news">News</a>
-        <a class="mobile-nav__item mobile-nav__item--close mobile-nav__cta" href="#">
-          Write a Message
-        </a>
+  <!-- Desktop Navigation -->
+  <nav id="main-header__nav">
+    <a class="main-nav__item" href="#home">Home</a>
+    <a class="main-nav__item" href="#what-we-do">What We Do</a>
+    <div class="main-nav__item main-nav__item--about">About
+      <nav id="main-nav--about">
+        <a class="main-nav__about-item" href="#about">The Creator</a>
+        <a class="main-nav__about-item" href="/whywasmessagesofhopecreated">MOH</a>
+        <a class="main-nav__about-item" href="/thriveldnpartnership">Thrive LDN</a>
       </nav>
-
-      <div id="main-header__nav-modal"></div>
-
-      <div id="main-header__mobile-nav--about">
-        <p class="mobile-nav__about-text">About</p>
-        <nav class="mobile-nav--about">
-          <a class="mobile-nav__about-item" href="#about">The Creator</a>
-          <a class="mobile-nav__about-item" href="../_why-was-moh-created/index.html">MOH</a>
-          <a class="mobile-nav__about-item" href="#">Thrive LDN</a>
-        </nav>
-      </div>
     </div>
+    <a class="main-nav__item" href="#latest-news">News</a>
+    <a id="main-nav__cta" href="#">
+      Write a Message
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div id="main-nav__dot"></div>
+  </nav>
 
+  <!-- Mobile Hamburger -->
+  <button id="main-header__hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile Navigation -->
+  <div id="main-header__mobile-nav">
+    <nav class="mobile-nav">
+      <a href="#home">Home</a>
+      <a href="#what-we-do">What We Do</a>
+      <a id="mobile-nav__item--about">About</a>
+      <a href="#latest-news">News</a>
+      <a href="/writeamessage">Write a Message</a>
+    </nav>
+
+    <nav id="mobile-nav__about" class="mobile-nav">
+      <p>About</p>
+      <a href="#about">The Creator</a>
+      <a href="/whywasmessagesofhopecreated">MOH</a>
+      <a href="/thriveldnpartnership">Thrive LDN</a>
+      <a id="mobile-nav__item--back"><span>❮ </span>Back</a>
+    </nav>
   </div>
 </header>
 
