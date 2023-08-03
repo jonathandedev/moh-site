@@ -8,7 +8,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 // constants
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 4001;
 const app = express();
 
 // middleware
@@ -21,7 +21,7 @@ app.listen(port, "localhost", () => {
 });
 
 // routes
-app.use("/whywasmessagesofhopecreated", express.static(__dirname + "/_why-was-moh-created"));
+app.use("/aboutmessagesofhope", express.static(__dirname + "/_about-moh"));
 app.use("/thriveldnpartnership", express.static(__dirname + "/_thrive-ldn-partnership"));
 app.use("/", express.static(__dirname + "/_home"));
 // app.use("*", express.static(__dirname + "/_404"));
@@ -58,6 +58,9 @@ app.get("/_shared/fonts/nunito/Nunito-Light.ttf", (req, res) => {
 });
 app.get("/_shared/fonts/nunito/Nunito-Regular.ttf", (req, res) => {
   res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Regular.ttf");
+});
+app.get("/_shared/fonts/nunito/Nunito-SemiBold.ttf", (req, res) => {
+  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-SemiBold.ttf");
 });
 app.get("/_shared/fonts/nunito/Nunito-Bold.ttf", (req, res) => {
   res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Bold.ttf");

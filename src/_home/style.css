@@ -6,17 +6,18 @@
   overflow: hidden;
   width: 100vw;
   min-width: 280px;
-  padding-top: 7vh;
+  padding-top: 3vh;
+  margin-bottom: 1rem;
 }
 
 .home__inner-container {
   min-width: 280px;
   width: 100%;
-  max-width: 32.25rem;
+  max-width: 35rem;
   height: 100%;
   margin: auto;
   margin-top: 5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 1rem;
   position: relative;
   overflow: hidden;
 
@@ -55,13 +56,13 @@
   width: 100%;
   max-width: 30rem;
   min-width: 280px;
-  margin: 0;
+  margin-top: 0;
   margin-left: 10%;
   padding-right: 25%;
   vertical-align: middle;
   display: inline-block;
 
-  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
   text-align: left;
   color: var(--main-black);
   font-family: pt-sans, sans-serif;
@@ -77,9 +78,12 @@
   color: var(--main-black);
 }
 
+.home__description a {
+  color: var(--main-black);
+}
+
 .home__button {
-  position: absolute;
-  right: 5%;
+  margin-top: 0;
 }
 
 @media (min-width: 64rem) {
@@ -89,12 +93,14 @@
   }
 
   .home__inner-container {
-    max-width: 60rem;
+    max-width: 65rem;
+    padding-bottom: 2rem;
   }
 
   .home__hero {
     position: absolute;
     right: 5%;
+    top: 3%;
     max-width: 26rem;
   }
 
@@ -114,14 +120,24 @@
     display: block;
     width: 45%;
     padding: 0;
-    margin: 4rem 0 0 2rem;
+    margin: 1rem 0 0 2rem;
 
     font-size: 110%;
   }
 
+  .home__description:first-of-type {
+    margin-top: 2rem;
+  }
+
+  .home__description:nth-of-type(3),
+  .home__description:nth-of-type(4) {
+    width: 38%;
+  }
+
   .home__button {
     position: relative;
-    margin: 5rem 0 0 5rem;
+    margin: auto;
+    margin-top: 2.5rem;
   }
 }
 
@@ -269,7 +285,7 @@
     margin-left: 5%;
     margin-right: 5%;
 
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 
@@ -479,6 +495,11 @@
     max-width: none;
   }
 
+  .about__section-title {
+    font-size: 3.5rem;
+    max-width: none;
+  }
+
   .about__content-container {
     width: 80%;
     flex-direction: column;
@@ -662,6 +683,10 @@
 }
 
 @media (min-width: 64rem) {
+
+  .latest-news__section-title {
+    font-size: 3.5rem;
+  }
 
   .latest-news__content-container {
     flex-direction: row;
