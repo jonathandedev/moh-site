@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Tab Stylings -->
+  <title>Write a Message</title>
+  <link rel="icon" href="../_shared/assets/favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../_shared/fonts/fonts.css">
+  <link rel="stylesheet" href="../_shared/shared.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/f2c4f731a9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header id="main-header">
+  <!-- Logo -->
+  <a id="main-header__logo" href="/">
+    <img 
+      role="presentation"
+      decoding="async"
+      fetchpriority="high"
+      src="../_shared/assets/logo.png" 
+      alt="Messages of Hope Logo." />
+  </a>
+
+  <!-- Desktop Navigation -->
+  <nav id="main-nav">
+    <a href="/">Home</a>
+    <a href="/#what-we-do">What We Do</a>
+    <div class="main-nav__item--about">
+      <p>About</p>
+      <nav id="main-nav__about">
+        <a href="/aboutmessagesofhope">About MOH</a>
+        <a href="/#about">The Creator</a>
+        <a href="/thriveldnpartnership">Thrive LDN</a>
+      </nav>
+    </div>
+    <a href="/#latest-news">News</a>
+    <a id="main-nav__cta" href="#">
+      Write a Message
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </nav>
+
+  <!-- Mobile Hamburger -->
+  <button id="main-header__hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile Navigation -->
+  <div id="main-header__mobile-nav">
+    <nav class="mobile-nav">
+      <a href="/">Home</a>
+      <a href="/#what-we-do">What We Do</a>
+      <a id="mobile-nav__item--about">About</a>
+      <a href="/#latest-news">News</a>
+      <a href="#">Write a Message</a>
+    </nav>
+
+    <nav id="mobile-nav__about" class="mobile-nav">
+      <p>About</p>
+      <a href="/aboutmessagesofhope">About MOH</a>
+      <a href="/#about">The Creator</a>
+      <a href="/thriveldnpartnership">Thrive LDN</a>
+      <a id="mobile-nav__item--back"><span>❮ </span>Back</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="write-a-message">
+    <div class="write-a-message__inner-container">
+      <h1 class="write-a-message__section-title">Write a Message</h1>
+      <div>
+        <textarea id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+        <button id="submit-button">Submit my Message</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal-backdrop"></div>
+  <section id="modal">
+    <div id="modal__inner">
+      <h1>Thank you for the message!</h1>
+      <p>We really appreciate you taking the time to write a message.</p>
+      <button>Close</button>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<div class="footer-white-padding"></div>
+<footer id="main-footer">
+  <div id="main-footer__inner">
+
+    <div class="main-footer__contact">
+      <h2>Contact</h2>
+      <div class="main-footer__social-icons">
+        <a href="https://www.instagram.com/messagesof.hope/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Messages-of-Hope/100087952429971/" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+      <button type="button" id="main-footer__email-button">Email Us</button>
+      <p>contact@messagesofhope.co.uk</p>
+    </div>
+
+    <div class="main-footer__images">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../_shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../_shared/shared.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -24,7 +24,7 @@ function setupForm() {
    */
 function submitForm() {
   const name = document.getElementById("name").value;
-  const organisation = document.getElementById("organisation").value;
+  const organisation = document.getElementById("group").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
@@ -53,9 +53,11 @@ function submitForm() {
       } else {
         if (res.status === 400) {
           showInvalidFields(res.body.json());
+          return;
         } else {
           clearForm();
           showModal(false);
+          return;
         }
       }
     }).catch(error => {console.log(error);});

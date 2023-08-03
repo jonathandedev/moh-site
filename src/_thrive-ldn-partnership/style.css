@@ -1,0 +1,165 @@
+
+main {
+  background: var(--main-white);
+}
+
+.crt-logo {
+  z-index: 1 !important;
+}
+
+#thrive-ldn-partnership {
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thrive-ldn-partnership__title-card {
+  width: 100%;
+  background: var(--main-blue);
+  
+}
+
+.thrive-ldn-partnership__title-card-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.thrive-ldn-partnership__section-title {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  max-width: 37rem;
+  padding: 1rem 0 1.5rem 1rem;
+
+  font-family: concert-one, sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-blue);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.thrive-ldn-partnership__logo {
+  display: block;
+  width: 30%;
+  max-width: 8rem;
+  margin-right: 0.5rem;
+}
+
+.thrive-ldn-partnership__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.thrive-ldn-partnership__inner-container p {
+  text-align: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--main-black);
+}
+
+.thrive-ldn-partnership__inner-container a {
+  color: var(--main-black);
+  text-decoration: underline;
+}
+
+.thrive-ldn-partnership__standout {
+  background: var(--text-hover-blue);
+  border: transparent solid 1px;
+  text-align: center;
+}
+
+.thrive-ldn-partnership__standout h2 {
+  font-family: nunito, sans-serif;
+  text-transform: uppercase;
+  color: var(--main-white);
+  width: 90%;
+  max-width: 30rem;
+  line-height: 115%;
+  letter-spacing: 0.4px;
+  margin: auto;
+  margin-top: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.thrive-ldn-partnership__image-container {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  aspect-ratio: 1/1;
+  margin: auto;
+  overflow: hidden;
+}
+
+.thrive-ldn-partnership__image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.desktop-element {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+
+  .thrive-ldn-partnership__inner-container {
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 70rem;
+    width: 80%;
+  }
+
+  .thrive-ldn-partnership__section-title {
+    font-size: 3.5rem;
+    width: fit-content;
+    max-width: none;
+    padding: 1.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.3rem;
+    /* margin-left: 0; */
+    margin: 0;
+  }
+
+  .thrive-ldn-partnership__text {
+    margin-left: 0;
+    margin-right: 0;;
+    font-size: 1.2rem;
+  }
+
+  .thrive-ldn-partnership__standout-text {
+    font-size: 1.5rem;
+    max-width: 40rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .title-card__logo {
+    width: 20%;
+    max-width: 10rem;
+  }
+
+  .thrive-ldn-partnership__standout-text {
+    font-size: 2.5rem;
+    max-width: 60rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .thrive-ldn-partnership__image-container {
+    float: right;
+    width: 40%;
+    max-width: 40rem;
+    margin-left: 1rem;
+  } 
+
+}

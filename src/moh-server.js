@@ -23,6 +23,7 @@ app.listen(port, "localhost", () => {
 // routes
 app.use("/aboutmessagesofhope", express.static(__dirname + "/_about-moh"));
 app.use("/thriveldnpartnership", express.static(__dirname + "/_thrive-ldn-partnership"));
+app.use("/writeamessage", express.static(__dirname + "/_write-a-message"));
 app.use("/", express.static(__dirname + "/_home"));
 // app.use("*", express.static(__dirname + "/_404"));
 

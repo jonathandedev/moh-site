@@ -9,10 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <!-- Tab Stylings -->
-  <title>Messages of Hope</title>
+  <title>Thrive LDN Partnership</title>
   <link rel="icon" href="../_shared/assets/favicon.ico" type="image/x-icon">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="../_shared/fonts/fonts.css">
   <link rel="stylesheet" href="../_shared/shared.css">
   <link rel="stylesheet" href="style.css">
 
@@ -25,117 +26,104 @@
 
 <!-- Header -->
 <header id="main-header">
-  <div id="main-header__inner-container">
+  <!-- Logo -->
+  <a id="main-header__logo" href="/">
+    <img 
+      role="presentation"
+      decoding="async"
+      fetchpriority="high"
+      src="../_shared/assets/logo.png" 
+      alt="Messages of Hope Logo." />
+  </a>
 
-    <!-- Logo -->
-    <a id="main-header__logo" href="/">
-      <img 
-        role="presentation"
-        decoding="async"
-        fetchpriority="high"
-        src="../_shared/assets/logo.png" 
-        alt="Messages of Hope Logo" />
-    </a>
-
-    <!-- Desktop Navigation -->
-    <div id="main-header__nav">
-      <div id="main-nav">
-        <nav id="main-nav__inner">
-          <a class="main-nav__item" href="/">Home</a>
-          <a class="main-nav__item" href="/#what-we-do">What We Do</a>
-          <div class="main-nav__item main-nav__item--about">About
-            <nav id="main-nav--about">
-              <a class="main-nav__about-item" href="/#about">The Creator</a>
-              <a class="main-nav__about-item" href="why-was-messages-of-hope-created.html">MOH</a>
-              <a class="main-nav__about-item" href="thrive-ldn-partnership.html">Thrive LDN</a>
-            </nav>
-          </div>
-          <a class="main-nav__item" href="/#latest-news">News</a>
-        </nav>
-        <div id="main-nav__dot"></div>
-      </div>
-      <a id="main-nav__cta" href="write-a-message.html">
-        Write a Message
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div>
-
-    <!-- Mobile Hamburger -->
-    <div id="main-header__hamburger-container">
-      <button id="main-header__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <!-- Mobile Navigation -->
-    <div id="main-header__mobile-nav">
-      <nav class="mobile-nav">
-        <a class="mobile-nav__item mobile-nav__item--close" href="/#home">Home</a>
-        <a class="mobile-nav__item mobile-nav__item--close" href="/#what-we-do">What We Do</a>
-        <a id="mobile-nav__item--about" class="mobile-nav__item">About</a>
-        <a class="mobile-nav__item mobile-nav__item--close" href="/#latest-news">News</a>
-        <a class="mobile-nav__item mobile-nav__item--close mobile-nav__cta" href="write-a-message.html">
-          Write a Message
-        </a>
+  <!-- Desktop Navigation -->
+  <nav id="main-nav">
+    <a href="/">Home</a>
+    <a href="/#what-we-do">What We Do</a>
+    <div class="main-nav__item--about">
+      <p>About</p>
+      <nav id="main-nav__about">
+        <a href="/aboutmessagesofhope">About MOH</a>
+        <a href="/#about">The Creator</a>
+        <a href="#">Thrive LDN</a>
       </nav>
-
-      <div id="main-header__nav-modal"></div>
-
-      <div id="main-header__mobile-nav--about">
-        <p class="mobile-nav__about-text">About</p>
-        <nav class="mobile-nav--about">
-          <a class="mobile-nav__about-item" href="/#about">The Creator</a>
-          <a class="mobile-nav__about-item" href="why-was-messages-of-hope-created.html">MOH</a>
-          <a class="mobile-nav__about-item" href="thrive-ldn-partnership.html">Thrive LDN</a>
-        </nav>
-      </div>
     </div>
+    <a href="/#latest-news">News</a>
+    <a id="main-nav__cta" href="/writeamessage">
+      Write a Message
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </nav>
 
+  <!-- Mobile Hamburger -->
+  <button id="main-header__hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile Navigation -->
+  <div id="main-header__mobile-nav">
+    <nav class="mobile-nav">
+      <a href="/">Home</a>
+      <a href="/#what-we-do">What We Do</a>
+      <a id="mobile-nav__item--about">About</a>
+      <a href="/#latest-news">News</a>
+      <a href="/writeamessage">Write a Message</a>
+    </nav>
+
+    <nav id="mobile-nav__about" class="mobile-nav">
+      <p>About</p>
+      <a href="/aboutmessagesofhope">About MOH</a>
+      <a href="/#about">The Creator</a>
+      <a href="#">Thrive LDN</a>
+      <a id="mobile-nav__item--back"><span>❮ </span>Back</a>
+    </nav>
   </div>
 </header>
 
 <main>
   <section id="thrive-ldn-partnership">
 
-    <div class="title-card">
-      <h1 class="section-title thrive-ldn-partnership__section-title">
-        Thrive LDN Partnership
-      </h1>
-      <picture class="title-card__logo">
-        <img
-          role="presentation"
-          src="assets/logo.png"
-          fetchpriority="high"
-          decoding="async" />
-      </picture>
+    <div class="thrive-ldn-partnership__title-card">
+      <div class="thrive-ldn-partnership__title-card-inner">
+        <h1 class="thrive-ldn-partnership__section-title">
+          Thrive LDN Partnership
+        </h1>
+        <picture class="thrive-ldn-partnership__logo">
+          <img
+            role="presentation"
+            src="../_shared/assets/logo.png"
+            fetchpriority="high"
+            decoding="async" />
+        </picture>
+      </div>
     </div>
 
     <div class="thrive-ldn-partnership__content">
 
-      <div class="inner-container thrive-ldn-partnership__inner-container">
-        <p class="thrive-ldn-partnership__text">
+      <div class="thrive-ldn-partnership__inner-container">
+        <p>
           Monday 15th May 2023 marks the beginning of an exciting collaboration
           between Thrive LDN and Messages of Hope.
         </p>
-        <p class="thrive-ldn-partnership__text">
+        <p>
           Thrive LDN is a citywide public mental health partnership to ensure all
           Londoners have an equal opportunity for good mental health and wellbeing.
         </p>
       </div>
       <div class="thrive-ldn-partnership__standout">
-        <h2 class="thrive-ldn-partnership__standout-text">
+        <h2>
           Messages of Hope and Thrive LDN are working together to bring hundreds of
           submissions to life in new collaboration.
         </h2>
       </div>
-      <div class="inner-container thrive-ldn-partnership__inner-container">
-        <p class="thrive-ldn-partnership__text">
+      <div class="thrive-ldn-partnership__inner-container">
+        <p>
           An exciting new collaboration between Thrive LDN and Messages of Hope will
           see anonymous messages from Londoners shared through the following Instagram
           accounts:
@@ -146,19 +134,18 @@
         </p>
       </div>
 
-      <!-- Place <div> tag where you want the feed to appear -->
+      <!-- Social media feed using thrid-party application curator.io -->
       <div id="curator-feed-default-feed-layout">
         <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
       </div>
       
-
-      <div class="inner-container thrive-ldn-partnership__inner-container">
-        <p class="thrive-ldn-partnership__text">
+      <div class="thrive-ldn-partnership__inner-container">
+        <p>
           Launched during Mental Health Awareness Week 2023 and aligning with Thrive
           LDN's Getting Through This Together campaign, the collaboration will see
           anonymous messages submitted by Londoners shared daily.
         </p>
-        <p class="thrive-ldn-partnership__text">
+        <p>
           The hundreds of anonymous messages have been submitted from Londoners, many
           who have experienced their own difficulties and challenges and who want to
           share words of advice and encouragement for anyone that might be struggling.
@@ -167,33 +154,33 @@
         </p>
       </div>
 
-      <div class="inner-container thrive-ldn-partnership__inner-container">
+      <div class="thrive-ldn-partnership__inner-container">
         <picture class="thrive-ldn-partnership__image-container">
           <source
             type="image/webp"
-            srcset="assets/thrive-ldn-partnership/thrive-ldn-partnership__image.webp" />
+            srcset="assets/thrive-ldn-partnership__image.webp" />
           <img
             role="presentation"
             fetchpriority="high"
-            src="assets/thrive-ldn-partnership/thrive-ldn-partnership__image.jpg"
+            src="assets/thrive-ldn-partnership__image.jpg"
             decoding="async" />
         </picture>
 
-        <p class="thrive-ldn-partnership__text">
+        <p>
           The collaboration began in October 2022 during World Mental Health Day 2022
           both online and on the day at London's City Hall as part of the Never Alone LDN
           festival. The project was a way of offering Londoners an opportunity
           to connect and share experiences through messages written by those living
           and working in the city.
         </p>
-        <p class="thrive-ldn-partnership__text">
+        <p>
           The next stage in the collaboration aims to bring these messages to
           life by sharing them publicly though Instagram. Aiming to encourage
           the conversation around mental health and help to break the stigma that
           surrounds it. As well as highlighting professional and urgent support
           available for anyone that may need it.
         </p>
-        <p class="thrive-ldn-partnership__text">
+        <p>
           Visit <a href="https://thriveldn.co.uk">thriveldn.co.uk</a> for more
           information regarding their work.
         </p>
@@ -203,7 +190,7 @@
           <span></span>
           <span></span>
           <span></span>
-          <p class="write-a-message-button__text">Write a Message</p>
+          <text>Write a Message</text>
         </button>
       </div>
     
@@ -232,13 +219,13 @@
     </div>
 
     <div class="main-footer__images">
-      <img src="assets/logo.png" alt="Messages of Hope Logo">
+      <img src="../_shared/assets/logo.png" alt="Messages of Hope Logo">
     </div>
   </div>
 </footer>
 
   <!-- JavaScript -->
-  <script src="scripts/shared.js"></script>
+  <script src="../_shared/shared.js"></script>
   <script type="text/javascript">
     /* curator-feed-default-feed-layout */
     (function(){
