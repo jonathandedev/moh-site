@@ -101,9 +101,26 @@ main {
 
 .about-moh__button {
   margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.about-moh__inner {
+  display: block;
+  background: var(--main-white);
 }
 
 @media (min-width: 64rem) {
+
+  .about-moh__inner {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    background: var(--main-white);
+    border: transparent 1px;
+    border-radius: 25px;
+  }
+
   .about-moh__section-title {
     max-width: fit-content;
   }
@@ -113,17 +130,24 @@ main {
   }
 }
 
-#what-is-moh {
-  padding-top: 2rem;
-}
 
 .what-is-moh__title-card {
   display: block;
-
+  margin: auto;
   background: var(--main-blue);
 }
 
 @media (min-width: 64rem) {
+  #what-is-moh {
+    background: var(--main-blue);
+    padding: 3rem;
+  }
+
+  .what-is-moh__title-card {
+    width: 90%;
+    border-radius: 25px;
+  }
+
   .what-is-moh__content {
     display: flex;
     flex-direction: row;
@@ -144,6 +168,17 @@ main {
 }
 
 @media (min-width: 64rem) {
+  #why-was-moh-created {
+    background: var(--main-yellow);
+    padding: 3rem;
+  }
+
+  .why-was-moh-created__title-card {
+    width: 90%;
+    border-radius: 25px;
+    margin: auto;
+  }
+
   .why-was-moh-created__content {
     display: flex;
     flex-direction: row;
@@ -177,6 +212,18 @@ main {
 }
 
 @media (min-width: 64rem) {
+
+  #what-moh-can-offer-you {
+    background: var(--main-blue);
+    padding: 3rem;
+  }
+
+  .what-moh-can-offer-you__title-card {
+    width: 90%;
+    border-radius: 25px;
+    margin: auto;
+  }
+
   .what-moh-can-offer-you__content {
     display: flex;
     flex-direction: row;
@@ -249,6 +296,17 @@ main {
 }
 
 @media (min-width: 64rem) {
+  #work-with-us {
+    background: var(--main-yellow);
+    padding: 3rem;
+  }
+
+  .work-with-us__title-card {
+    width: 90%;
+    border-radius: 25px;
+    margin: auto;
+  }
+
   .work-with-us__content {
     display: flex;
     flex-direction: row;

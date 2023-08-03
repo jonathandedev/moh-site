@@ -35,8 +35,7 @@
   padding: 1rem 0 1.5rem 1rem;
   font-family: pt-sans, sans-serif;
   font-size: 1rem;
-  color: var(--text-blue);
-  text-transform: uppercase;
+  color: var(--main-black);
   text-align: left;
 }
 

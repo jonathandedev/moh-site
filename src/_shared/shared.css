@@ -516,13 +516,6 @@ main {
   font-size: 1.3rem;
 }
 
-.main-footer__socials {
-  display: inline-block;
-  vertical-align: middle;
-  width: 49%;
-  max-width: 11rem;
-}
-
 .main-footer__social-icons a {
   text-decoration: none;
 }

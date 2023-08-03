@@ -88,7 +88,82 @@
 
 <!-- Main -->
 <main>
-  
+
+<!-- Banner -->
+<section id="banner">
+  <article id="banner-3">
+    <a href="/projects"></a>
+    <picture class="banner__image-container">
+      <img 
+        role="presentation"
+        src="assets/banner__image-3.jpg"
+        decoding="async"
+        fetchpriority="high"
+        loading="lazy"
+        alt="Bethan Evans, the creator of Messages of Hope, working with kids
+        during the Messages of Hope 2023 event." />
+    </picture>
+    <div class="banner__latest-project--title-card">
+      <h2>Our Latest Project...</h2>
+    </div>
+    <picture class="banner__logo">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../_shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </picture>
+  </article>
+  <article id="banner-2">
+    <a href="/writeamessage"></a>
+    <picture class="banner__image-container">
+      <img 
+        role="presentation"
+        src="assets/banner__image-2.jpg"
+        decoding="async"
+        fetchpriority="high"
+        loading="lazy"
+        alt="Someone writing a message of hope during the Messages of Hope 
+        2023 event." />
+    </picture>
+    <div class="banner__write-a-message--title-card">
+      <h2>Write a Message</h2>
+    </div>
+    <picture class="banner__logo">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../_shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </picture>
+  </article>
+  <article class="active" id="banner-1">
+    <a href="/aboutmessagesofhope#work-with-us"></a>
+    <picture class="banner__image-container">
+      <img
+        role="presentation"
+        src="assets/banner__image-1.jpg"
+        decoding="async"
+        fetchpriority="high"
+        alt="Bethan Evans, the creator of Messages of Hope, talking to the 
+        public during Messages of Hope 2023." />
+    </picture>
+    <div class="banner__work-with-us">
+      <h2>Work with us</h2>
+    </div>
+    <picture class="banner__logo">
+      <img 
+        role="presentation"
+        decoding="async"
+        fetchpriority="high"
+        src="../_shared/assets/logo.png" 
+        alt="Messages of Hope Logo" />
+    </picture>
+  </article>
+</section>
+
 <!-- Home -->
 <section id="home">
   <div class="home__inner-container">
@@ -151,68 +226,64 @@
 <section id="what-we-do">
   <div class="what-we-do__inner-container">
 
-    <h1 class="what-we-do__section-title">What we do</h1>
+    <a id="what-we-do__murals" href="/murals">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/what-we-do__murals.webp" />
+        <img
+          role="presentation"
+          src="assets/what-we-do__murals.jpg"
+          decoding="async"
+          fetchpriority="auto"
+          alt="Bethan Evans, the creator of Messages of Hope, painting a mural." />
+      </picture>
+      <div class="what-we-do__white-effect"></div>
+      <h3>Murals</h3>
+      <p>Messages of Hope wants to spread hope and make communities 
+        vibrant and colourful. Click here to see how we're doing this.
+      </p>
+    </a>
 
-    <div class="what-we-do__content-container">
+    <a id="what-we-do__projects" href="/projects">
+      <picture>
+        <source 
+          type="image/webp" 
+          srcset="assets/what-we-do__projects.webp" />
+        <img
+          style="height: auto; width: 100%"
+          role="presentation"
+          src="assets/what-we-do__projects.jpg"
+          decoding="async"
+          fetchpriority="auto"
+          alt="A young child writing a message of hope during the 2023 Messages
+          of Hope event." />
+      </picture>
+      <div class="what-we-do__white-effect"></div>
+      <h3>Projects</h3>
+      <p>Messages of Hope runs several projects throughout the year. 
+        Click here to learn more about our projects and what we do.
+      </p>
+    </a>
 
-      <a id="what-we-do__projects" href="/projects">
-        <picture>
-          <source 
-            type="image/webp" 
-            srcset="assets/what-we-do__projects.webp" />
-          <img 
-            role="presentation"
-            src="assets/what-we-do__projects.jpg"
-            decoding="async"
-            fetchpriority="auto"
-            alt="A hand writing out different project ideas in a notebook." />
-        </picture>
-        <div class="what-we-do__white-effect"></div>
-        <h3>Projects</h3>
-        <p>Messages of Hope runs several projects throughout the year. 
-          Click here to learn more about our projects and what we do.
-        </p>
-      </a>
-
-      <a id="what-we-do__murals" href="/murals">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="assets/what-we-do__murals.webp" />
-          <img
-            role="presentation"
-            src="assets/what-we-do__murals.jpg"
-            decoding="async"
-            fetchpriority="auto"
-            alt="Bethan Evans, the creator of Messages of Hope, painting a mural." />
-        </picture>
-        <div class="what-we-do__white-effect"></div>
-        <h3>Murals</h3>
-        <p>Messages of Hope wants to spread hope and make communities 
-          vibrant and colourful. Click here to see how we're doing this.
-        </p>
-      </a>
-
-      <a id="what-we-do__colouring" href="/colouringpages">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="assets/what-we-do__colouring.webp" />
-          <img
-            role="presentation"
-            src="assets/what-we-do__colouring.jpg"
-            decoding="async"
-            fetchpriority="auto"
-            alt="A young child colouring inside a colouring book." />
-        </picture>
-        <div class="what-we-do__white-effect"></div>
-        <h3>Free Colouring Pages</h3>
-        <p>Click here to download FREE, hand drawn colouring pages. Print them
-          out and have fun!
-        </p>
-      </a>
-
-    </div>
+    <a id="what-we-do__colouring" href="/colouringpages">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="assets/what-we-do__colouring.webp" />
+        <img
+          role="presentation"
+          src="assets/what-we-do__colouring.jpg"
+          decoding="async"
+          fetchpriority="auto"
+          alt="A young child colouring at the 2023 Messages of Hope event." />
+      </picture>
+      <div class="what-we-do__white-effect"></div>
+      <h3>Free Colouring Pages</h3>
+      <p>Click here to download FREE, hand drawn colouring pages. Print them
+        out and have fun!
+      </p>
+    </a>
   </div>
 </section>
 

@@ -4,7 +4,6 @@
 const express = require("express");
 const compression = require("compression");
 const cors = require("cors");
-const fs = require("fs");
 require("dotenv").config();
 
 // constants
@@ -24,6 +23,8 @@ app.listen(port, "localhost", () => {
 app.use("/aboutmessagesofhope", express.static(__dirname + "/_about-moh"));
 app.use("/thriveldnpartnership", express.static(__dirname + "/_thrive-ldn-partnership"));
 app.use("/writeamessage", express.static(__dirname + "/_write-a-message"));
+app.use("/murals", express.static(__dirname + "/_murals"));
+app.use("/projects", express.static(__dirname + "/_projects"));
 app.use("/", express.static(__dirname + "/_home"));
 // app.use("*", express.static(__dirname + "/_404"));
 
