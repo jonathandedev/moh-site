@@ -2,6 +2,7 @@
 :root {
   --main-white: #fff;
   --main-grey: #bbbbbb;
+  --main-dark-blue: #3D5377;
   --main-blue: #cae9fe;
   --main-yellow: #edd286;
   --main-black: #2b2b2b;
@@ -10,9 +11,10 @@
   --text-hover-blue: #2d6eb8;
 
   --brown-background: #c8c1b6;
-  --yellow-background: #edd286;
+  --yellow-background: #FBEEB9;
 
   --header-border: #d5d5d5;
+  --banner-grey: #576170;
   
   --mobile-header-min-height: 4.5rem;
   --mobile-header-max-height: 5.5rem;
@@ -594,7 +596,7 @@ main {
   margin: 5% auto;
   overflow: hidden;
 
-  border: black solid 3px;
+  border: var(--main-black) solid 3px;
   border-radius: 50px;
   background: var(--main-white);
   font-family: nunito, sans-serif;
