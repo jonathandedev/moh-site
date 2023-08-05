@@ -61,11 +61,10 @@ app.post("/workwithus", (req, res) => {
     failedObject.message = "Message is required";
   }
 
-  if (organisation.length < 1) {
-    finalString = "Name: ${name}\nEmail: ${email}\nMessage: ${message}";
-  } else {
-    finalString = "Organisation: ${organisation}\nName: ${name}\nEmail: ${email}\nMessage: ${message}";
-  }
+  finalString = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+  if (organisation.length > 1) {
+    finalString = "Organisation: " + organisation + "\n" + finalString;
+  } 
 
   if (failed) {
     res.status(400).send(failedObject);
@@ -75,7 +74,7 @@ app.post("/workwithus", (req, res) => {
   fs.writeFile('contact-form.txt', finalString, (err) => {return;});
 
   const { exec } = require('node:child_process');
-  exec('echo "Contact Form Response" | sendmail -s Contact-Form -a contact-form.txt "contact@messagesofhope.co.uk"', (err, output) => {
+  exec('echo "Contact Form Response" | mutt -s Contact -a contact-form.txt -- contact@messagesofhope.co.uk', (err, output) => {
     if (err) {
         res.sendStatus(503);
         return;
