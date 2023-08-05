@@ -563,12 +563,13 @@
   max-width: 50rem;
   position: relative;
   margin: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
+  width: 98%;
 
   text-transform: uppercase;
   font-family: concert-one, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--main-white);
 }
 
@@ -677,6 +678,7 @@
   .about__section-title {
     font-size: 3.5rem;
     max-width: none;
+    margin-bottom: 3rem;
   }
 
   .about__content-container {
