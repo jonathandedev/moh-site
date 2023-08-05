@@ -2,13 +2,21 @@ main {
   background: black;
 }
 
+.mobile-element {
+  display: block;
+}
+
+.desktop-element {
+  display: none;
+}
+
 #collaborative-art-project {
   display: block;
+  position: relative;
   padding: env(safe-area-inset);
   overflow: hidden;
   width: 100vw;
   min-width: 280px;
-  margin-bottom: 1rem;
 }
 
 .collaborative-art-project__section-title {
@@ -33,7 +41,7 @@ main {
   overflow: hidden;
 }
 
-.collaborative-art-project__hero picture {
+.collaborative-art-project__hero.mobile-element picture {
   position: absolute;
   display: block;
   width: 100%;
@@ -78,10 +86,6 @@ main {
   height: auto;
 }
 
-.collaborative-art-project__logo {
-  display: none;
-}
-
 .collaborative-art-project__text {
   width: 90%;
   max-width: 32rem;
@@ -89,8 +93,127 @@ main {
 }
 
 .collaborative-art-project__text p {
-  font-family: pt-sans, sans-serif;
+  font-family: nunito, sans-serif;
   font-size: 1rem;
   color: var(--main-white);
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.collaborative-art-project__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 35rem;
+  margin: auto;
+}
+
+.collaborative-art-project__image-container picture {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.collaborative-art-project__image-container img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 64rem) {
+
+  .desktop-element {
+    display: block;
+  }
+
+  .mobile-element {
+    display: none;
+  }
+
+  .collaborative-art-project__section-title {
+    font-size: 3.5rem;
+  }
+
+  .collaborative-art-project__hero.desktop-element {
+    display: flex;
+    width: 80%;
+    max-width: 70rem;
+    min-height: 20rem;
+    height: 60vh;
+    max-height: 30rem;
+    aspect-ratio: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collaborative-art-project__hero.desktop-element picture {
+    height: 100%;
+    width: auto;
+  }
+
+  .collaborative-art-project__hero.desktop-element img {
+    height: 100%;
+    width: auto;
+  }
+
+  .collaborative-art-project__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 70rem;
+  }
+
+  .collaborative-art-project__text p {
+    display: block;
+    width: 45%;
+    font-size: 1.3rem;
+  }
+
+  .collaborative-art-project__image-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    margin-bottom: 10rem;
+  }
+
+  .flower-image {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+  }
+
+  .flower-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -2rem;
+  }
+
+  .sun-image {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
+
+  .sun-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

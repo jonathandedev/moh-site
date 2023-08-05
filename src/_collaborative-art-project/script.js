@@ -1,6 +1,6 @@
 
 function setupHero() {
-  const hero = document.querySelectorAll('.collaborative-art-project__hero picture');
+  const hero = document.querySelectorAll('.mobile-element picture');
   let current = 0;
 
   setInterval(showNext, 5000);
