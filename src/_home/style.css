@@ -749,7 +749,7 @@
   height: 2rem;
 }
 
-#latest-news {
+#news {
   display: block;
   padding: env(safe-area-inset);
   overflow: hidden;
@@ -761,7 +761,7 @@
   background: var(--main-yellow);
 }
 
-.latest-news__inner-container {
+.news__inner-container {
   min-width: 280px;
   width: 100%;
   max-width: 32.25rem;
@@ -776,7 +776,7 @@
   border-top: white 2px solid;
 }
 
-.latest-news__section-title {
+.news__section-title {
   width: fit-content;
   max-width: 50rem;
   position: relative;
@@ -790,14 +790,14 @@
   color: var(--main-white);
 }
 
-.latest-news__content-container {
+.news__content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#latest-news button {
+#news button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -813,14 +813,14 @@
   padding: 0;
 }
 
-#latest-news button:hover,
-#latest-news button:focus,
-#latest-news button:active {
+#news button:hover,
+#news button:focus,
+#news button:active {
   box-shadow: 0px 0px 10px 0px #ae8c46bf;
   cursor: pointer;
 }
 
-#latest-news picture {
+#news picture {
   display: inline-block;
   vertical-align: middle;
   width: 35%;
@@ -830,13 +830,13 @@
   border-radius: 15px;
 }
 
-#latest-news img {
+#news img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.latest-news__text-container {
+.news__text-container {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
@@ -845,7 +845,7 @@
   font-family: nunito, sans-serif;
 }
 
-.latest-news__text-container h4 {
+.news__text-container h4 {
   margin: 0;
   font-size: clamp(0.7rem, 2.8vw, 1rem);
   color: var(--main-black);
@@ -855,7 +855,7 @@
   margin-bottom: 7px;
 }
 
-.latest-news__text-container p {
+.news__text-container p {
   margin: 0;
   line-height: 130%;
   letter-spacing: 0.9px;
@@ -865,11 +865,11 @@
 
 @media (min-width: 64rem) {
 
-  .latest-news__section-title {
+  .news__section-title {
     font-size: 3.5rem;
   }
 
-  .latest-news__content-container {
+  .news__content-container {
     flex-direction: row;
     justify-content: center;
   }

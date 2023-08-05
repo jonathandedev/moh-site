@@ -20,59 +20,21 @@ app.listen(port, "localhost", () => {
 });
 
 // routes
+app.use("/_shared", express.static(__dirname + "/_shared"));
+app.use("/", express.static(__dirname + "/_home"));
+
+app.use("/writeamessage", express.static(__dirname + "/_write-a-message"));
+
 app.use("/aboutmessagesofhope", express.static(__dirname + "/_about-moh"));
 app.use("/thriveldnpartnership", express.static(__dirname + "/_thrive-ldn-partnership"));
-app.use("/writeamessage", express.static(__dirname + "/_write-a-message"));
-app.use("/murals", express.static(__dirname + "/_murals"));
+
+app.use("/projects/_shared", express.static(__dirname + "/_shared")); 
 app.use("/projects", express.static(__dirname + "/_projects"));
-app.use("/", express.static(__dirname + "/_home"));
-// app.use("*", express.static(__dirname + "/_404"));
+app.use("/projects/collaborativeartproject", express.static(__dirname + "/_collaborative-art-project"));
+app.use("/projects/worldmentalhealthday2022", express.static(__dirname + "/_world-mental-health-day-2022"));
+app.use("/projects/murals", express.static(__dirname + "/_murals"));
+app.use("/projects/messagesofhope2020", express.static(__dirname + "/_messages-of-hope-2020"));
 
-// shared files
-app.get("/_shared/shared.css", (req, res) => {
-  res.sendFile(__dirname + "/_shared/shared.css");
-});
-app.get("/_shared/shared.js", (req, res) => {
-  res.sendFile(__dirname + "/_shared/shared.js");
-});
-app.get("/_shared/assets/favicon.ico", (req, res) => {
-  res.sendFile(__dirname + "/_shared/assets/favicon.ico");
-});
-app.get("/_shared/assets/logo.png", (req, res) => {
-  res.sendFile(__dirname + "/_shared/assets/logo.png");
-});
-app.get("/_shared/assets/mobile-nav-image.webp", (req, res) => {
-  res.sendFile(__dirname + "/_shared/assets/mobile-nav-image.webp");
-});
-app.get("/_shared/assets/mobile-nav-image.jpg", (req, res) => {
-  res.sendFile(__dirname + "/_shared/assets/mobile-nav-image.jpg");
-});
+app.use("/freecolouring", express.static(__dirname + "/_free-colouring"));
 
-// fonts
-app.get("/_shared/fonts/fonts.css", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/fonts.css");
-});
-app.get("/_shared/fonts/concert-one/ConcertOne-Regular.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/concert-one/ConcertOne-Regular.ttf");
-});
-app.get("/_shared/fonts/nunito/Nunito-Light.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Light.ttf");
-});
-app.get("/_shared/fonts/nunito/Nunito-Regular.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Regular.ttf");
-});
-app.get("/_shared/fonts/nunito/Nunito-SemiBold.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-SemiBold.ttf");
-});
-app.get("/_shared/fonts/nunito/Nunito-Bold.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-Bold.ttf");
-});
-app.get("/_shared/fonts/nunito/Nunito-ExtraBold.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/nunito/Nunito-ExtraBold.ttf");
-});
-app.get("/_shared/fonts/pt-sans/PTSans-Regular.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/pt-sans/PTSans-Regular.ttf");
-});
-app.get("/_shared/fonts/pt-sans/PTSans-Bold.ttf", (req, res) => {
-  res.sendFile(__dirname + "/_shared/fonts/pt-sans/PTSans-Bold.ttf");
-});
+app.use("*", express.static(__dirname + "/_404"));

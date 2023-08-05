@@ -81,8 +81,8 @@ function bannerSetup() {
 /**
  * Used to setup the click events for the latest news button.
  */
-function latestNewsSetup() {
-  const danceFundraiserButton = document.getElementById("latest-news__dance-fundraiser");
+function newsSetup() {
+  const danceFundraiserButton = document.getElementById("news__dance-fundraiser");
   const danceFundraiser = document.getElementById("dance-fundraiser-popup");
   const modal = document.getElementById("modal");
 
@@ -109,7 +109,7 @@ function latestNewsSetup() {
  */
 function generatePage() {
   bannerSetup();
-  latestNewsSetup();
+  newsSetup();
 }
 
 document.body.onload = generatePage();

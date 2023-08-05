@@ -1,5 +1,10 @@
 
 #projects {
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
   text-align: center;
 }
 
@@ -62,7 +67,13 @@
 }
 
 @media (max-width: 23.5rem) {
+
   .projects__white-effect {
+    height: clamp(12rem, 80%, 20rem) !important;;
+  }
+
+  #projects__world-mental-health-day-2022 .projects__white-effect,
+  #projects__murals .projects__white-effect {
     height: clamp(12rem, 95%, 20rem) !important;; 
   }
 }
