@@ -53,16 +53,17 @@ function setupForm() {
     const modal = document.getElementById('modal');
     const modalTitle = document.querySelector('#modal h1');
     const modalText = document.querySelector('#modal p');
+    const closeBtn = document.querySelector('#modal button');
 
     backdrop.style.display = "block";
     modal.style.display = "block";
 
     if (!success) {
-      title.innerHTML = "OOPS. Something went wrong...";
-      text.innerHTML = "Please try again later, or send us one directly using social media.";
+      modalTitle.innerHTML = "OOPS. Something went wrong...";
+      modalText.innerHTML = "Please try again later, or send us one directly using social media.";
     } else {
-      title.innerHTML = "Thank you for your message!";
-      text.innerHTML = "We really appreciate you taking the time to write a message.";
+      modalTitle.innerHTML = "Thank you for your message!";
+      modalText.innerHTML = "We really appreciate you taking the time to write a message.";
     }
 
     closeBtn.addEventListener("click", () => {

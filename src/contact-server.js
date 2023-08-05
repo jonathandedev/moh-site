@@ -62,9 +62,9 @@ app.post("/workwithus", (req, res) => {
   }
 
   if (organisation.length < 1) {
-    finalString = 'echo "Name: ${name}\nEmail: ${email}\nMessage: ${message}" | sendmail contact@messagesofhope.co.uk';
+    finalString = "Name: ${name}\nEmail: ${email}\nMessage: ${message}";
   } else {
-    finalString = 'echo "Organisation: ${organisation}\nName: ${name}\nEmail: ${email}\nMessage: ${message}" | sendmail contact@messagesofhope.co.uk';
+    finalString = "Organisation: ${organisation}\nName: ${name}\nEmail: ${email}\nMessage: ${message}";
   }
 
   if (failed) {
@@ -72,8 +72,10 @@ app.post("/workwithus", (req, res) => {
     return;
   }
 
+  fs.writeFile('contact-form.txt', finalString, (err) => {return;});
+
   const { exec } = require('node:child_process');
-  exec(finalString, (err, output) => {
+  exec('echo "Contact Form Response" | sendmail -s Contact-Form -a contact-form.txt "contact@messagesofhope.co.uk"', (err, output) => {
     if (err) {
         res.send(503).send("Something went wrong");
         return;
