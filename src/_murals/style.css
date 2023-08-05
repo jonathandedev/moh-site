@@ -1,0 +1,143 @@
+
+#murals img {
+  width: 100%;
+  height: auto;
+}
+
+.murals__inner-container {
+  max-width: 35rem;
+  margin: auto;
+}
+
+.murals__section-title {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  max-width: 37rem;
+  padding: 1rem 0 1.5rem 1rem;
+
+  font-family: concert-one, sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-blue);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.murals__hero {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  max-width: 30rem;
+}
+
+.murals__hero img {
+  border-radius: 76% 24% 72% 28% / 54% 21% 79% 46% 
+}
+
+.murals__text {
+  text-align: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 2rem;
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--main-black);
+}
+
+.murals__image-container {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.murals__image-container img {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  border-radius: 29% 71% 68% 32% / 54% 63% 37% 46% ;
+}
+
+.desktop-element {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+
+  .mobile-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: block;
+  }
+
+  .murals__inner-container {
+    max-width: 70rem;
+  }
+
+  .murals__hero {
+    width: 90%;
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 3rem;
+  }
+
+  .murals__section-title {
+    font-size: 3.5rem;
+    width: fit-content;
+    max-width: none;
+    padding: 1.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.3rem;
+    /* margin-left: 0; */
+    margin: 0;
+  }
+
+  .murals__right {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+  }
+
+  .murals__left {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    margin-top: 3rem;
+  }
+
+  .murals__text {
+    padding: 0;
+    width: 100%;
+
+    margin: 0;
+    position: relative;
+  }
+
+  .murals__image-container {
+    display: block;
+    width: 80%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .murals__image-container img {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+}

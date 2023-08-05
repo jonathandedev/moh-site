@@ -1,0 +1,239 @@
+
+main {
+  background: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#world-mental-health-day-2022 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.world-mental-health-day-2022__inner-container {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.title-card {
+  background: black;
+  display: block;
+  overflow: hidden;
+}
+
+.title-card__inner {
+  display: block;
+  position: relative;
+  min-width: 280px;
+  width: 100%;
+  max-width: 33rem;
+  margin: auto;
+}
+
+.world-mental-health-day-2022__section-title {
+  font-family: concert-one, sans-serif;
+  font-size: clamp(1.5rem, 10vw, 2.5rem);
+  /* margin-top: 0; */
+  width: 24rem;
+  color: var(--main-white);
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  line-height: 105%;
+  margin: 0;
+  z-index: 1;
+}
+
+.title-card__year img {
+  display: block;
+  height: 65%;
+  width: auto;
+  position: absolute;
+  left: min(73%, 19rem);
+  top: 20%;
+  z-index: 1;
+}
+
+.title-card__world img {
+  display: block;
+  height: 25%;
+  width: auto;
+  position: absolute;
+  left: min(50%, 14rem);
+  bottom: 0;
+}
+
+.title-card__bubble img {
+  display: block;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 24rem;
+  top: 50%;
+  z-index: 0;
+  
+  transform: rotate(-10deg);
+}
+
+.title-card__bubble-2 img {
+  display: block;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 26rem;
+  top: -35%;
+  z-index: 0;
+
+  transform: rotate(-40deg);
+}
+
+.world-mental-health-day-2022__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  min-height: 15rem;
+  height: 35vh;
+  max-height: 25rem;
+}
+
+.world-mental-health-day-2022__image-container {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.world-mental-health-day-2022__image-container img {
+  height: 110%;
+  width: auto;
+  margin: 0;
+}
+
+.world-mental-health-day-2022__text {
+  text-align: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 2rem;
+  font-family: nunito, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: black;
+  line-height: 130%;
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+}
+
+.desktop-element {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+
+  .mobile-element {
+    display: none;
+  }
+
+  .desktop-element {
+    display: block;
+  }
+
+  .title-card__inner {
+    max-width: 45rem;
+  }
+
+  .world-mental-health-day-2022__section-title {
+    font-size: 4rem;
+    width: auto;
+  }
+
+  .title-card__inner {
+    max-width: 53rem;
+  }
+
+  .title-card__year img {
+    display: block;
+    height: 70%;
+    width: auto;
+    position: absolute;
+    left: 32rem;
+    top: 15%;
+    z-index: 1;
+  }
+  
+  .title-card__world img {
+    display: block;
+    height: 30%;
+    width: auto;
+    position: absolute;
+    left: 22rem;
+    bottom: 0;
+  }
+  
+  .title-card__bubble img {
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 40rem;
+    top: 50%;
+    z-index: 0;
+    
+    transform: rotate(-10deg);
+  }
+  
+  .title-card__bubble-2 img {
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 43rem;
+    top: -35%;
+    z-index: 0;
+  
+    transform: rotate(-40deg);
+  }
+
+  .world-mental-health-day-2022__inner-container {
+    max-width: 50rem;
+  }
+
+  .world-mental-health-day-2022__image-1 {
+    width: 45%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    float: left;
+  }
+
+  .world-mental-health-day-2022__image-2 {
+    width: 45%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+    float: right;
+  }
+  
+  .world-mental-health-day-2022__text {
+    margin: 1rem;
+  }
+
+}
