@@ -67,7 +67,7 @@ function submitForm() {
    */
   function clearForm() {
     document.getElementById("name").value = "";
-    document.getElementById("organisation").value = "";
+    document.getElementById("group").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
   }

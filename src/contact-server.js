@@ -77,7 +77,7 @@ app.post("/workwithus", (req, res) => {
   const { exec } = require('node:child_process');
   exec('echo "Contact Form Response" | sendmail -s Contact-Form -a contact-form.txt "contact@messagesofhope.co.uk"', (err, output) => {
     if (err) {
-        res.send(503).send("Something went wrong");
+        res.sendStatus(503);
         return;
     }
     res.status(200).send("Message sent");
