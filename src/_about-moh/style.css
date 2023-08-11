@@ -280,6 +280,7 @@ main {
   margin: auto;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
+  background: var(--main-white);
   border: 2px solid var(--main-black);
   border-radius: 50px;
   font-family: nunito,sans-serif;
