@@ -73,7 +73,8 @@
   }
 
   #projects__world-mental-health-day-2022 .projects__white-effect,
-  #projects__murals .projects__white-effect {
+  #projects__murals .projects__white-effect,
+  #projects__mental-wealth-festival .projects__white-effect {
     height: clamp(12rem, 95%, 20rem) !important;; 
   }
 }
@@ -125,7 +126,8 @@
   top: -35%;
 }
 
-#projects__world-mental-health-day-2022 .projects__white-effect {
+#projects__world-mental-health-day-2022 .projects__white-effect,
+#projects__mental-wealth-festival .projects__white-effect {
   height: clamp(11.5rem, 68%, 17rem);
 }
 
@@ -176,7 +178,8 @@
     font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   }
 
-  #projects__world-mental-health-day-2022 .projects__white-effect {
+  #projects__world-mental-health-day-2022 .projects__white-effect,
+  #projects__mental-wealth-festival .projects__white-effect {
     height: clamp(13rem, 75%, 18rem);
   }
 
@@ -218,11 +221,13 @@
       -moz-transition: all 0.2s ease 0.4s;
     }
   
-    #projects__world-mental-health-day-2022 .projects__white-effect {
+    #projects__world-mental-health-day-2022 .projects__white-effect,
+    #projects__mental-wealth-festival .projects__white-effect {
       height: 45%;
     }
   
-    #projects__world-mental-health-day-2022:hover .projects__white-effect {
+    #projects__world-mental-health-day-2022:hover .projects__white-effect,
+    #projects__mental-wealth-festival:hover .projects__white-effect {
       height: clamp(13rem, 75%, 18rem);
     }
 

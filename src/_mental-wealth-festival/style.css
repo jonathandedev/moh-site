@@ -1,0 +1,138 @@
+
+main {
+  background: url("assets/1.svg") repeat, var(--main-white);
+  background-size: 50% auto;
+}
+
+#mental-wealth-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
+  margin-bottom: 1rem;
+}
+
+#mental-wealth-festival h1 {
+  position: relative;
+  width: 90%;
+  /* max-width: 37rem; */
+  padding: 0;
+  margin: 1rem auto;
+
+  font-family: concert-one, sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-blue);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.mental-wealth-festival__container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: top;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 70rem;
+  width: 100%;
+}
+
+.mental-wealth-festival__bottom {
+  flex-direction: column;
+}
+
+.mental-wealth-festival__image-container {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  aspect-ratio: 1/1;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mental-wealth-festival__image-container img {
+  width: 100%;
+  height: auto;
+}
+
+#mental-wealth-festival p {
+  text-align: left;
+  margin-left: 6%;
+  margin-right: 6%;
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--main-black);
+  margin-top: 0;
+}
+
+.city-lit__logo {
+  display: block;
+  width: 100%;
+  height: fit-content;
+}
+
+.city-lit__logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 64rem) {
+
+  #mental-wealth-festival h1 {
+    font-size: 3.5rem;
+    width: fit-content;
+    max-width: none;
+    padding: 1.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1.3rem;
+    /* margin-left: 0; */
+    margin: 0;
+  }
+
+  .mental-wealth-festival__container {
+    flex-direction: row;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  .mental-wealth-festival__image-container {
+    display: block;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    min-width: 25rem;
+    margin: auto;
+  }
+
+  .free-text {
+    display: block;
+    width: 100%;
+    padding: 0 2%;
+    max-width: 60rem;
+  }
+
+  .mental-wealth-festival__bottom .mental-wealth-festival__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+
+  .city-lit__logo {
+    position: relative;
+    top: 2.25rem;
+  }
+
+}
