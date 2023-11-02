@@ -602,6 +602,7 @@
   font-family: pt-sans, sans-serif;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
   margin-bottom: 1rem;
+  text-decoration: none;
   /* max-width: 30rem; */
 }
 
