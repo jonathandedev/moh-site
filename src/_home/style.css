@@ -662,6 +662,10 @@
   height: auto;
 }
 
+.connections__logo-container {
+  margin-top: 1rem;
+}
+
 .connections__mayor {
   display: block;
   width: 60%;
