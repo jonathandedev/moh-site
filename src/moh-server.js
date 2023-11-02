@@ -39,4 +39,4 @@ app.use("/projects/connections2024", express.static(__dirname + "/_connections-2
 
 app.use("/freecolouring", express.static(__dirname + "/_free-colouring"));
 
-app.use("*", express.static(__dirname + "/_404"));
+app.use("*", express.static(__dirname + "/_not-found"));

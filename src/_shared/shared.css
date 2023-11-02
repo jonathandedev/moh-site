@@ -697,3 +697,44 @@ main {
 }
 
 /* End Write a Message Button */
+
+.not-found__main {
+  background: var(--main-white);
+}
+
+#not-found {
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
+  text-align: center;
+}
+
+.not-found__inner-container {
+  padding-bottom: 2rem;
+}
+
+.not-found__content-container {
+  display: block;
+  margin: 4rem auto;
+  border: 2px solid var(--main-black);
+  border-radius: 50px;
+  width: fit-content;
+  padding: 2rem;
+
+}
+
+.not-found__section-title {
+  margin: 0;
+  font-family: nunito, sans-serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  color: var(--main-black);
+}
+
+.not-found__content-container p,
+.not-found__content-container a {
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  color: var(--main-black);
+}
