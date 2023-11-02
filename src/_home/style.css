@@ -533,6 +533,117 @@
 
 /* End What We Do */
 
+/* Connections */
+
+#connections {
+  display: block;
+  padding: env(safe-area-inset);
+  overflow: hidden;
+  width: 100vw;
+  min-width: 280px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  background: var(--main-yellow);
+}
+
+.connections__inner-container {
+  min-width: 280px;
+  width: 100%;
+  max-width: 32.25rem;
+  height: 100%;
+  margin: auto;
+  /* padding-bottom: 2rem; */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.connections__section-title {
+  width: fit-content;
+  max-width: 50rem;
+  position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  text-transform: uppercase;
+  font-family: concert-one, sans-serif;
+  font-size: 2.5rem;
+  color: var(--main-white);
+}
+
+.connections__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 30rem;
+}
+
+.connections__button {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  background: none;
+  border: var(--main-white) 2px solid;
+  border-radius: 25px;
+  color: var(--main-white);
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  margin-bottom: 1rem;
+  /* max-width: 30rem; */
+}
+
+.connections__button:hover,
+.connections__button:focus,
+.connections__button:active {
+  box-shadow: 0px 0px 10px 0px #fff7e692;
+  cursor: pointer;
+}
+
+.connections__button span {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: var(--main-white) 2px solid;
+  aspect-ratio: 1/1;
+}
+
+@media (min-width: 64rem) {
+
+  #connections {
+    padding: 4rem 0;
+  }
+
+  .connections__section-title {
+    font-size: 3.5rem;
+    margin: 0 1rem;
+  }
+
+  .connections__inner-container {
+    width: 80%;
+    max-width: none;
+  }
+}
+
+/* End Connections */
+
 /* About */
 
 #about {

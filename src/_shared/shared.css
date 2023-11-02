@@ -317,7 +317,7 @@ main {
   
     #main-nav {
       display: flex;
-      width: 42rem;
+      width: 50rem;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -368,7 +368,7 @@ main {
       
       margin-top: clamp(1.5rem, 6vh, 2.25rem);
       top: 1rem;
-      right: calc(18.3rem + 5%);
+      right: calc(13.3rem + 5%);
       flex-direction: column;
       justify-content: center;
       align-items: center;

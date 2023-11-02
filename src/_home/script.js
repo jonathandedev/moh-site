@@ -109,7 +109,7 @@ function newsSetup() {
  */
 function generatePage() {
   bannerSetup();
-  newsSetup();
+  // newsSetup();
 }
 
 document.body.onload = generatePage();

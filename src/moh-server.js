@@ -35,6 +35,7 @@ app.use("/projects/worldmentalhealthday2022", express.static(__dirname + "/_worl
 app.use("/projects/murals", express.static(__dirname + "/_murals"));
 app.use("/projects/messagesofhope2020", express.static(__dirname + "/_messages-of-hope-2020"));
 app.use("/projects/mentalwealthfestival", express.static(__dirname + "/_mental-wealth-festival"));
+app.use("/projects/connections2024", express.static(__dirname + "/_connections-2024"));
 
 app.use("/freecolouring", express.static(__dirname + "/_free-colouring"));
 

@@ -20,23 +20,23 @@ app.listen(port, "localhost", () => {
   console.log("Server is running on port: " + port);
 });
 
-app.post("/writeamessage", (req, res) => {
-  const data = req.body;
-  if (!req.body.hasOwnProperty("message")) {
-    res.status(400).send("Message is required");
-    return;
-  }
+// app.post("/writeamessage", (req, res) => {
+//   const data = req.body;
+//   if (!req.body.hasOwnProperty("message")) {
+//     res.status(400).send("Message is required");
+//     return;
+//   }
 
-  const message = data.message;
-  const entry = "\n" + message + "$" + new Date().toISOString().slice(0, 10);
-  fs.appendFile("messages.csv", entry, (err) => {
-    if (err) {
-      res.status(503).send("Something went wrong");
-      return;
-    }
-    res.status(200).send("Message sent");
-  });
-});
+//   const message = data.message;
+//   const entry = "\n" + message + "$" + new Date().toISOString().slice(0, 10);
+//   fs.appendFile("messages.csv", entry, (err) => {
+//     if (err) {
+//       res.status(503).send("Something went wrong");
+//       return;
+//     }
+//     res.status(200).send("Message sent");
+//   });
+// });
 
 app.post("/workwithus", (req, res) => {
   const data = req.body;
