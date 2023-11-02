@@ -8,7 +8,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 // constants
-const port = process.env.PORT || 4003;
+const port = process.env.PORT || 4002;
 const app = express();
 
 // middleware
