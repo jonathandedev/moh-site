@@ -102,7 +102,7 @@ main {
 
 }
 
-#photo-submission {
+#video-submission {
   display: block;
   padding: env(safe-area-inset);
   overflow: hidden;
@@ -112,11 +112,11 @@ main {
   background: var(--white);
 }
 
-.photo-submission__content-container {
+.video-submission__content-container {
   display: block;
 }
 
-.photo-submission__text-container {
+.video-submission__text-container {
   background: var(--lime);
   border: 2px solid var(--black);
   max-width: 50rem;
@@ -124,8 +124,8 @@ main {
   margin: auto;
 }
 
-.photo-submission__content-container p,
-.photo-submission__content-container li {
+.video-submission__content-container p,
+.video-submission__content-container li {
   padding-right: 5%;
   /* display: block; */
   width: 90%;
@@ -140,7 +140,7 @@ main {
   opacity: 1;
 }
 
-.photo-submission__content-container button {
+.video-submission__content-container button {
   margin: 1.5rem;
   font-family: pt-sans, sans-serif;
   font-size: clamp(1rem, 1.8vw, 1.1rem);
@@ -153,13 +153,13 @@ main {
 
 @media (min-width: 64rem) {
 
-  .photo-submission__content-container {
+  .video-submission__content-container {
     width: 90%;
     max-width: 120rem;
     margin: auto;
   }
 
-  .photo-submission__content-container h3 {
+  .video-submission__content-container h3 {
     margin: 1rem;
     font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   }
