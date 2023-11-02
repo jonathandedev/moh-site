@@ -639,7 +639,7 @@
 
   .connections__inner-container {
     width: 80%;
-    max-width: none;
+    max-width: 70rem;
   }
 }
 
