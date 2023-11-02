@@ -565,13 +565,19 @@
   text-align: center;
 }
 
-.connections__section-title {
+.connections__title-container {
+  max-width: 35rem;
+  margin: auto;
+  position: relative;
+  top: -0.75rem;
+}
+
+.connections__title-container h1 {
   width: fit-content;
-  max-width: 50rem;
   position: relative;
   margin: auto;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  /* margin-bottom: 2rem;
+  margin-top: 1rem; */
 
   text-transform: uppercase;
   font-family: concert-one, sans-serif;
@@ -626,15 +632,62 @@
   aspect-ratio: 1/1;
 }
 
+.connections__logo-container {
+  width: 55%;
+  min-width: 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  background: var(--main-white);
+  padding: 0 1rem;
+  border-radius: 25px;
+}
+
+.connections__logo-container picture {
+  display: block;
+  width: 30%;
+  height: 100%;
+}
+
+.connections__logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.connections__thrive-logo {
+  width: 65% !important;
+  height: auto;
+}
+
+.connections__mayor {
+  display: block;
+  width: 60%;
+  min-width: 18rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  background: var(--main-white);
+}
+
+.connections__mayor img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 64rem) {
 
   #connections {
     padding: 4rem 0;
   }
 
-  .connections__section-title {
+  .connections__title-container h1 {
     font-size: 3.5rem;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
   }
 
   .connections__inner-container {

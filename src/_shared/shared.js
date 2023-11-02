@@ -57,7 +57,7 @@ function footerSetup() {
    * Used to open the email window.
    */
   function openEmail() {
-    window.open("mailto:mailto:contact@messagesofhope.co.uk");
+    window.open("mailto:contact@messagesofhope.co.uk");
   }
 }
 
