@@ -27,7 +27,7 @@ function setupForm() {
         body: JSON.stringify(data),
       };
 
-      fetch("https://contact.messagesofhope.co.uk/message", options)
+      fetch("https://store.messagesofhope.co.uk/message", options)
         .then(res => {
           if (res.ok) {
             clearForm();
