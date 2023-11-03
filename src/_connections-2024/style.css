@@ -58,6 +58,12 @@ main {
   opacity: 1;
 }
 
+.connections__content-container a {
+  font-family: pt-sans, sans-serif;
+  font-size: clamp(1rem, 1.8vw, 1.1rem);
+  color: var(--main-black);
+}
+
 .connections__content-container .inner-list li {
   margin: 0;
   text-decoration: none;
@@ -140,8 +146,10 @@ main {
   opacity: 1;
 }
 
-.video-submission__content-container button {
-  margin: 1.5rem;
+.video-submission__content-container button,
+.connections__content-container .button {
+  display: block;
+  margin: 1.5rem auto;
   font-family: pt-sans, sans-serif;
   font-size: clamp(1rem, 1.8vw, 1.1rem);
   color: var(--grey);
@@ -149,6 +157,13 @@ main {
   border: solid 2px var(--grey);
   background: var(--white);
   border-radius: 25px;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.connections__content-container .button {
+  color: var(--main-black);
+  border: solid 2px var(--main-black);
 }
 
 @media (min-width: 64rem) {
